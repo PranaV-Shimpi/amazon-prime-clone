@@ -1,0 +1,23 @@
+<div class="container">
+    <div style=" background-color:#fcfdff ; width:50% ; margin:auto ; margin-top: 5em; align-items: center;">
+        <div style="margin:auto" class="col-8">
+            <h1>Signup</h1>
+
+            <div class=" form-group" style="margin-top: 1em;">
+                <input  [(ngModel)]="user.email" placeholder="Email" class="form-control">
+                
+            </div>
+            <div class=" form-group" style="margin-top: 1em;">
+                <input [(ngModel)]="user.name" placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group" style="margin-top: 1em;">
+                <input [(ngModel)]="user.password" type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="form-group" style="margin-top: 1em;">
+                <button (click)="signup()" class="btn btn-primary">Signup</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
