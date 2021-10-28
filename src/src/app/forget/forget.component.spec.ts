@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlayVideosComponent } from './play-videos.component';
+import { ForgetComponent } from './forget.component';
 
-describe('PlayVideosComponent', () => {
-  let component: PlayVideosComponent;
-  let fixture: ComponentFixture<PlayVideosComponent>;
+describe('ForgetComponent', () => {
+  let component: ForgetComponent;
+  let fixture: ComponentFixture<ForgetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlayVideosComponent ]
+      declarations: [ ForgetComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlayVideosComponent);
+    fixture = TestBed.createComponent(ForgetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

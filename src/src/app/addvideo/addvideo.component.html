@@ -1,0 +1,28 @@
+<div class="container">
+    <div style=" background-color:#fcfdff ; width:50% ; margin:auto ; margin-top: 5em; align-items: center;">
+        <div style="margin:auto" class="col-8">
+            <h1>Add Video</h1>
+
+            <div class=" form-group" style="margin-top: 1em;">
+                <input  [(ngModel)]="title" placeholder="Title of Video" class="form-control">
+            </div>
+
+            <div class=" form-group" style="margin-top: 1em;">
+                <label>Cover image of Video</label>
+                <input accept="image/png, image/gif, image/jpeg , image/webp , image/*" (change)="uploadImage($event)"   type="file" class="form-control">
+            </div>
+            <div class=" form-group" style="margin-top: 1em;">
+                <input  [(ngModel)]="genre" placeholder="Genre of Video" class="form-control">
+            </div>
+            <div class=" form-group" style="margin-top: 1em;">
+                <input accept="video/mp4,video/x-m4v,video/*" (change)="getFile($event)"   type="file" class="form-control">
+            </div>
+           
+            <div class="form-group" style="margin-top: 1em;">
+                <button (click)="addVideo()" class="btn btn-primary">Add Video</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
